@@ -1,2 +1,2 @@
 # ThePortfolio
- portfolio web application
+ portfolio web application for my own interest
