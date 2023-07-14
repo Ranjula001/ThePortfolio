@@ -53,8 +53,8 @@
         }
 
         a {
-            color: var(--gray-color);
-            text-decoration: none;
+            //color: var(--gray-color);
+            text-decoration: transparent;
             flex-direction: column;
 
             font-weight: 600;
@@ -62,13 +62,15 @@
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                color: MediumSeaGreen 	;
+                color: rgba(128, 0, 128, 0.747);
+                font-size: 3em;
             }
         }
 
         &:hover {
             div {
-                background: MediumSeaGreen 	;
+                background: yellowgreen 	;
+                font-size: 3em;
             }
         }
 
@@ -89,12 +91,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: purple;
 
     svg {
         width: 65%;
         height: 65%;
-        color: white;
+        color: black;
+    }
+
+    svg:hover{
+        color: greenyellow;
     }
 
     div{
@@ -115,11 +121,14 @@
         flex-direction: column;
 
         background: url('../../assets/bgWhite.png');
-        background-color: whitesmoke;
+        background-color: rgba(128, 0, 128, 0.486);
         background-size: cover;
         background-repeat: repeat;
 
-        box-shadow: 0 0 20px rgba(45, 46, 45, 0.356);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+
+        box-shadow: 0 0 20px rgba(172, 255, 47, 0.438);
 
         svg {
             width: 55px;
@@ -142,9 +151,11 @@
 
             li {
                 margin: 1rem;
+                //backdrop-filter: blur(4px);
+                //-webkit-backdrop-filter: blur(4px);
 
                 a {
-                    color: var(--gray-color);
+                    color: var(--black-color);
                     text-decoration: none;
                     flex-direction: column;
 
@@ -153,7 +164,9 @@
                     transition: all 0.3s ease-in-out;
 
                     &:hover {
-                        color: MediumSeaGreen 	;
+                        color: greenyellow;
+                        font-style:oblique;
+                        font-size: 3em;
                     }
 
                 }

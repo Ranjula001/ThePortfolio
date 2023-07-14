@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 
+
 import './Header.scss'
 
 const scaleObjects = {
@@ -13,9 +14,11 @@ const scaleObjects = {
   }
 }
 
+
 const Header = () => {
   return (
     <div id="home" className="app__header app__flex">
+
       <motion.div
         whileInView={{x:[-100,0], opacity: [0,1]}}
         transition={{duration: 0.5}}
@@ -29,7 +32,7 @@ const Header = () => {
             <div style={{marginLeft:20}}>
               <p className="p-Hello">Hello, I am</p>
               <h1 className="p-Me">Ranjula Ilukpitiya</h1>
-              <p>from SRI-LANKA 🇱🇰</p>
+              <p className="p-LK"> from Sri-Lanka 🇱🇰 </p>
             </div>
           </div>
 
